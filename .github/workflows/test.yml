@@ -1,0 +1,17 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  formula:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install --formula ./Formula/age-of-agents-hooks.rb
+      - run: brew test age-of-agents-hooks
+      - run: brew audit --strict age-of-agents-hooks
