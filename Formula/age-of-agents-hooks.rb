@@ -1,8 +1,8 @@
 class AgeOfAgentsHooks < Formula
   desc "Connect coding-agent lifecycle hooks to Age of Agents"
   homepage "https://github.com/Mbauro/age-of-agents-hooks"
-  url "https://github.com/Mbauro/age-of-agents-hooks/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "426cf6ddb7bec31c329d8969fc461c8ee3c5460523eb5b0f1da090e4eb110949"
+  url "https://github.com/Mbauro/age-of-agents-hooks/releases/download/v1.0.0/age-of-agents-hooks-1.0.0.tar.gz"
+  sha256 "f5fb57d97b9e9a7109a455ae78256c12023c388de122558e81c7f350059a1be3"
   license "MIT"
 
   depends_on "node"
